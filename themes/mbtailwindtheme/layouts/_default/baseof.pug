@@ -1,0 +1,14 @@
+| <!DOCTYPE html>
+
+html(lang="en")
+    | {{- partial "head.html" . -}}
+    body
+        .max-w-screen-md.bg-pink-200.mx-auto
+
+        | {{- partial "header.html" . -}}
+
+        div(id="content")
+            | {{- block "main" . }}{{- end }}
+
+        | {{- partial "footer.html" . -}}
+
